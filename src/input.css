@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border m-0 p-0;
+  }
+
+  body {
+    @apply bg-white w-dvw min-h-dvh relative overflow-x-hidden h-[100rem];
+  }
+
+  h1{
+    @apply text-4xl sm:text-5xl 2xl:text-6xl
+  }
+
+  section{
+    @apply w-[80rem]
+  }
+}
+
+/* clamp css */
+
+@layer components {
+
+  .btn-main{
+    @apply btn btn-primary bg-maize border-maize hover:bg-citrine hover:border-citrine 
+  }
+}
