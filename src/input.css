@@ -8,23 +8,54 @@
   }
 
   body {
-    @apply bg-white w-dvw min-h-dvh relative overflow-x-hidden h-[100rem];
+    @apply bg-white w-dvw min-h-dvh relative overflow-x-hidden;
   }
 
-  h1{
-    @apply text-4xl sm:text-5xl 2xl:text-6xl
+  h1 {
+    @apply text-2xl sm:text-4xl  2xl:text-[3.4rem];
   }
 
-  section{
-    @apply w-[80rem]
+  h2 {
+    @apply text-3xl font-bold font__2P;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply text-base;
+  }
+
+  img {
+    @apply object-cover object-center bg-no-repeat;
   }
 }
 
 /* clamp css */
 
 @layer components {
+  .font__2P {
+    font-family: "Press Start 2P", system-ui;
+  }
 
-  .btn-main{
-    @apply btn btn-primary bg-maize border-maize hover:bg-citrine hover:border-citrine 
+  .btn-main {
+    @apply btn btn-primary bg-maize border-maize hover:bg-citrine hover:border-citrine;
+  }
+
+  .text__logo {
+    @apply font__2P;
+  }
+
+  #menu-burgers article {
+    @apply bg-[#111A3B] text-white w-80  flex flex-col items-center justify-evenly gap-4 px-4 py-8 pb-4;
+  }
+
+  #menu-burgers img {
+    @apply w-72 border-8 border-white;
+  }
+
+  #menu-burgers p {
+    @apply text-justify;
   }
 }

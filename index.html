@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chrome & Burger</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
     <header
@@ -12,7 +15,7 @@
     >
       <a href="#" class="flex justify-between items-center gap-x-2">
         <div class="logo text-4xl mb-2">🍔</div>
-        <p class="text-2xl">Chrome & Burger</p>
+        <p class="text__logo">Chrome & Burger</p>
       </a>
       <nav class="h-24 flex items-center">
         <ul
@@ -38,14 +41,14 @@
         </button>
       </nav>
     </header>
-    <main class="flex justify-center px-[5%] py-[2.5%]">
-      <section class="flex flex-col md:flex-row md:justify-around gap-6">
+    <main class="flex flex-col justify-center items-center gap-y-12 py-[2.5%]">
+      <section class="flex flex-col flex-wrap justify-evenly gap-8 mx-4 sm:flex-row">
         <div
-          class="bg-maize p-12 flex flex-col justify-evenly 
-          md:w-[28rem] md:h-[28rem] lg:w-[30rem] lg:h-[30rem] xl:w-[34rem] xl:h-[34rem] 2xl:w-[36rem] 2xl:h-[36rem]"
+          class="bg-maize p-8 flex flex-col justify-evenly
+          md:w-[28rem] md:h-[28rem] xl:w-[34rem] xl:h-[34rem] 2xl:w-[36rem] 2xl:h-[36rem]"
         >
           <h1>Chrome & Burger</h1>
-          <p class="my-4 md:my-0">
+          <p class="my-4 md:my-0 text-justify">
             Feeling famished after conquering those waves? Look no further than
             Chrome & Burger, your one-stop shop for gourmet grub that's as
             classic as a beach sunset and as shiny as a chrome fender!
@@ -58,19 +61,21 @@
         </div>
         <div>
           <img
+            class="md:w-[28rem] md:h-[28rem] xl:w-[34rem] xl:h-[34rem] 2xl:w-[36rem] 2xl:h-[36rem]"
             src="./images/BurgerTruck.jpeg"
             alt="Burger Truck"
-            class="object-cover object-center bg-no-repeat 
-            md:h-[28rem] lg:w-[30rem] lg:w-[30rem] lg:h-[30rem] xl:w-[34rem] xl:h-[34rem] 2xl:w-[36rem] 2xl:h-[36rem]"
           />
         </div>
       </section>
-      <!-- <section id="menu-burgers">
+      <section id="menu-burgers" class=" flex flex-col items-center gap-y-24 my-20">
         <h2>100% Organic Burgers</h2>
-        <div>
+        <div class=" w-[80dvw] flex justify-around flex-wrap gap-y-8 gap-x-4">
           <article>
             <figure>
-              <img src="./images/TheAllAmerican.jpeg" alt="The All-American" />
+              <img
+                src="./images/TheAllAmerican.jpeg"
+                alt="The All-American"
+              />
             </figure>
             <h3>The All-American</h3>
             <p>
@@ -96,7 +101,10 @@
           </article>
           <article>
             <figure>
-              <img src="./images/TheAlohaBurger.jpeg" alt="The Aloha Burger" />
+              <img
+                src="./images/TheAlohaBurger.jpeg"
+                alt="The Aloha Burger"
+              />
             </figure>
             <h3>The Aloha Burger</h3>
             <p>
@@ -107,7 +115,7 @@
             </p>
           </article>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Include your JavaScript file -->
     <script src="./scripts.js"></script>
