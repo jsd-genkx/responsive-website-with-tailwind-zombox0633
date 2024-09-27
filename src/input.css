@@ -47,6 +47,13 @@
     @apply font__2P;
   }
 
+
+  #menu a{
+    @apply flex w-full  items-center h-12 px-4 hover:bg-maize last:mb-2
+  }
+
+  
+
   #menu-burgers article {
     @apply bg-[#111A3B] text-white w-80  flex flex-col items-center justify-evenly gap-4 px-4 py-8;
   }
