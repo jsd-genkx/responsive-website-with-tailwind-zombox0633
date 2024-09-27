@@ -8,15 +8,15 @@
   }
 
   body {
-    @apply bg-white w-dvw min-h-dvh relative overflow-x-hidden;
+    @apply bg-[#FEFEFC] w-dvw min-h-dvh relative overflow-x-hidden;
   }
 
   h1 {
-    @apply text-2xl sm:text-4xl  2xl:text-[3.4rem];
+    @apply text-2xl sm:text-4xl 2xl:text-[3.4rem];
   }
 
   h2 {
-    @apply text-3xl font-bold font__2P;
+    @apply text-center text-2xl sm:text-3xl font-bold font__2P;
   }
 
   h3 {
@@ -48,7 +48,7 @@
   }
 
   #menu-burgers article {
-    @apply bg-[#111A3B] text-white w-80  flex flex-col items-center justify-evenly gap-4 px-4 py-8 pb-4;
+    @apply bg-[#111A3B] text-white w-80  flex flex-col items-center justify-evenly gap-4 px-4 py-8;
   }
 
   #menu-burgers img {
